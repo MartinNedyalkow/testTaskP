@@ -1,4 +1,4 @@
-var products = [{
+export const _products = [{
     ProductID : 1,
     ProductName : "Chai",
     SupplierID : 1,

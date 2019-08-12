@@ -1,0 +1,20 @@
+<div id="wrapper">
+<table id="customers">
+        <thead>
+    <tr>
+      <th>ProductName</th>
+      <th>UnitsInStock</th>
+      <th>UnitPrice</th>
+      <th>Discontinued</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let product of data; let i = index;" (click)='selectItem(product)'>
+        <td class="tooltip">{{product.ProductName}}<span class="tooltiptext">Click for more </span></td>
+        <td>{{product.UnitsInStock}}</td>
+        <td>{{product.UnitPrice}}</td>
+        <td><input type="checkbox" ng-model="checkbox" [checked]="product.Discontinued" [disabled]="true"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
