@@ -1,31 +1,36 @@
 
 #wrapper{
+  
   padding: 50px;
 }
-
-#customers {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+/* table */
+#products {
+  
+  font-family: 'Roboto', sans-serif;;
     border-collapse: collapse;
     width: 100%;
+    
   }
   
-  #customers td, #customers th {
+  
+  #products td, #products th {
     border: 1px solid #ddd;
     padding: 8px;
   }
   
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  #products tr:nth-child(even){background-color: #f2f2f2;}
   
-  #customers tr:hover {background-color: #ddd;}
+  #products tr:hover {background-color: #ddd;}
   
-  #customers th {
+  #products th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #59de00;
     color: black;
   }
-  
+
+  /* tooltip */
 .tooltip {
   position: relative;
 }
@@ -63,3 +68,6 @@
   opacity: 1;
 }
 
+.pagination /deep/ .ngx-pagination .current {
+  background: #59de00;
+}

@@ -18,19 +18,19 @@ item=false
     Swal.fire({
       title: `<strong><u>${event.ProductName}</u></strong>`,
       html:`<style>
-      #customers {
-        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      #products {
+        font-family: 'Roboto', sans-serif;
         border-collapse: collapse;
         width: 100%;
       }
-      #customers td, #customers th {
+      #products td, #products th {
         border: 1px solid #ddd;
         padding: 8px;
       }
-      #customers tr:hover {background-color: #ddd;}
+      #products tr:hover {background-color: #ddd;}
       </style>
-      <table id="customers">
-      <thead>
+  <table id="products">
+  <thead>
   <tr >
   <td><strong>Category</strong></td>
   <td>${event.Category.CategoryName}</td>
