@@ -1,16 +1,16 @@
 <div id="wrapper">
 <table id="products" >
     <tr>
-      <th>ProductName</th>
-      <th>UnitsInStock</th>
-      <th>UnitPrice</th>
+      <th>Product Name</th>
+      <th>Unit Price</th>
+      <th>Units In Stock</th>
       <th >Discontinued</th>
     </tr>
 
     <tr *ngFor="let product of data | paginate: { itemsPerPage: 15, currentPage: page }" (click)='selectItem(product)'>
         <td class="tooltip">{{product.ProductName}}<span class="tooltiptext">Click for more </span></td>
+        <td>${{product.UnitPrice.toFixed(2)}}</td>
         <td>{{product.UnitsInStock}}</td>
-        <td>{{product.UnitPrice}}</td>
         <td><input type="checkbox" ng-model="checkbox" [checked]="product.Discontinued" [disabled]="true"></td>
     </tr>
     <pagination-controls class="pagination" (pageChange)="page = $event"></pagination-controls>

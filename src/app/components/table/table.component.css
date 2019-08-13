@@ -16,9 +16,9 @@
   #products td, #products th {
     border: 1px solid #ddd;
     padding: 8px;
+    cursor: pointer;
   }
   
-  #products tr:nth-child(even){background-color: #f2f2f2;}
   
   #products tr:hover {background-color: #ddd;}
   
@@ -26,8 +26,8 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #59de00;
-    color: black;
+    background-color: #3F51B5;
+    color: white;
   }
 
   /* tooltip */
@@ -69,5 +69,5 @@
 }
 
 .pagination /deep/ .ngx-pagination .current {
-  background: #59de00;
+  background: #3F51B5;
 }

@@ -41,7 +41,7 @@ item=false
   </tr>
 </thead>
 </table>`,
-confirmButtonColor: "#59de00"
+confirmButtonColor: "#3F51B5"
     })
   }
 }
